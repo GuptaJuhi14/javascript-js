@@ -40,4 +40,35 @@ const myFunction = function()
     console.log("hello world")
 }
 
-console.log(typeOf myFunction); // output => function
+// console.log(typeOf myFunction) // output => function
+
+
+// *** MEMORY ***
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+// Stack memory - gives Copy of  declared variable
+//heap memory - gives reference of variable / change is reflected on original value
+
+let myProjectname = "Creator Copilot" //primitive datatype => stack
+
+let anotherName = myProjectname
+anotherName = "Creator"
+
+console.log(myProjectname); // output => Creator Copilot
+
+console.log(anotherName); // output => Creator
+
+// Non primitive data type => heap memory
+let user1 = {
+  email: "user@gmail.com",
+  upi: "user@ybl"
+}
+
+let user2 = user1
+
+user2.email = "gupta@gmail.com"
+
+console.log(user1.email); // output => gupta@gmail.com
+console.log(user2.email); // output => gupta@gmail.com
+
