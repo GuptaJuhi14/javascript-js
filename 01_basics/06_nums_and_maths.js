@@ -23,4 +23,15 @@ const hundreds = 1000000
 
 // *** Maths ***
 
-console.log(Math); // Object[Math]{}
+// Math.abs(-4), Math.round(4.6), Math.ceil(4.2), Math.floor(4.9), Math.min(3,5,8), Math.max(3,6,9)
+
+console.log(Math.random()); // returns value Between 0 and 1
+console.log((Math.random()*10)+1); // Between 1 and 10
+console.log(Math.floor(Math.random()*10)+1) // floor rounds off to lowest value // gives one digit
+
+const min = 10
+const max = 20
+
+console.log(Math.random() * (max - min + 1))
+// ** Formula **
+console.log(Math.floor(Math.random() * (max - min + 1)) + min) // max - min to get range and plus 1 to avoid 0 case / finally add min
